@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="k">Hi Kavi</h1>
+    <p>Welcome to CSBS</p>
+    <p class="title">MERN intern</p>
+    <h3 class="csbs">Kavisri</h3>
+    <h3 class="csbs">Aswatha</h3>
+    <h3 class="csbs">Sindhigaa</h3>
+    <h3 class="csbs">Dharshini</h3>
+   
+     <button id="btn">click</button>
+     <h4 id="helo">button executed</h4>
+     <button id="btn1">click</button>
+     <h5 id="text"></h5>
+     <button id="btn2">click</button>
+     <h6 id="world"></h6>
+
+
+</body>
+    <script>
+        document.getElementById("k").style.color="red";
+        let elements=document.getElementsByClassName("title")
+        for(let i=0;i<elements.length;i++){
+            elements[i].style.backgroundColor="pink";
+            elements[i].style.fontSize="50px";
+        }
+        
+        let ele=document.querySelectorAll("h3")
+        for(let i=0;i<ele.length;i++)
+        {
+            ele[i].style.color="purple"
+            ele[i].style.fontSize="20px";
+        }
+       
+
+        let elem=document.getElementById("btn")
+        elem.addEventListener("click",()=>{
+            document.getElementById("helo").style.color="brown";document.getElementById("helo").style.fontSize="25px";
+        })
+        let elem1=document.getElementById("btn1")
+        elem1.addEventListener("dblclick",()=>{
+            document.getElementById("text").innerHTML="Hiiii";document.getElementById("text").style.color="green";document.getElementById("text").style.fontSize="25px";
+        })
+        let elem2=document.getElementById("btn1")
+        elem2.addEventListener("mouseover",()=>{
+            document.getElementById("world").innerHTML="how are you";document.getElementById("world").style.color="blue";document.getElementById("world").style.fontSize="25px";
+    
+        })
+    </script>
+
+</html>
