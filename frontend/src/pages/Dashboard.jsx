@@ -25,9 +25,11 @@ function Dashboard() {
 //         </div>
 //        </div>
 <>
-<h1>Dashboard</h1>
-<p>Students count:{students.length}</p>
-<StudentForm addOn={addStudent}/>
+
+<h1> Dashboard  </h1>
+
+<p>  Students count : {students.length} </p>
+<StudentForm addOn= {addStudent}/>
 <>
 {students.map((s,index)=>(
   <StudentDetails key={index}{...s}/>

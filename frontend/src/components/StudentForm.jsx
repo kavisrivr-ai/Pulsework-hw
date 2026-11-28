@@ -17,6 +17,7 @@ const StudentForm = ({addOn}) => {
   return (
     <div>
         <form onSubmit={handleSubmit(submit)}>
+            <br></br>
             <input {...register("name")} placeholder="Enter name" />
             <p>{errors.name?.message}</p>
             <input {...register("email")} placeholder="Enter email" />
